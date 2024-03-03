@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login-styling.css">
+    <title>Login Page</title>
+</head>
+<body>
+    <div class="container">
+        <form id="loginForm" onsubmit="validateForm(event)">
+            <h2>Login</h2>
+            <div class="input-container">
+                <label for="username">Username or Email:</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username or email" required>
+            </div>
+            
+            <div class="input-container">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                <span class="toggle-password" onclick="togglePasswordVisibility()">Show Password</span>
+            </div>
+            
+            <button type="submit">Sign In</button>
+        </form>
+        <p class="create-account">Don't have an account? <a href="#">Create an account</a></p>
+    </div>
+    <script src="login-function.js"></script>
+</body>
+</html>
